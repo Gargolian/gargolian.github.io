@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Proyecto integrador Argentina Programa" />
+    <meta name="keywords" content="HTML, CSS, CV" />
+    <meta name="author" content="Fulano de Tal" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Fulano de Tal - Estudiante</title>
+</head>
+
+<body>
+    <!-- ******************** ENCABEZADO ******************** -->
+    <header class="header">
+        <div class="container">
+            <div class="fixed">
+                <div class="header__burger burger">
+                    <span class="burger__line burger__line--first"></span>
+                    <span class="burger__line burger__line--second"></span>
+                    <span class="burger__line burger__line--third"></span>
+                </div>
+            </div>
+            <div class="header__top">
+                <h1 title="Fulano de Tal" class="header__title">Curriculum Vitae</h1>
+                <nav class="sosial-links">
+                    <a title="Linkedin" href="https://ar.linkedin.com/in/FulanoDeTal">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a title="GitHub" href="https://github.com/Gargolian"><i class="fab fa-github-square"></i></a>
+                    <a title="Email" href="esficticio@tambienaca.ar"><i class="fas fa-envelope"></i></a>
+                </nav>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a class="header__link js-scroll" href="#skills">Habilidades</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link js-scroll" href="#projects">Proyectos</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link js-scroll" href="#education">Educacion</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link js-scroll" href="#experience">Experiencia</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link js-scroll" href="#languages">Idiomas</a>
+                    </li>
+                </ul>
+                <div class="header__nav-close">
+                    <span class="header__nav-close-line"></span>
+                    <span class="header__nav-close-line"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- ******************** FIN ENCABEZADO ******************** -->
+
+    <!-- ******************** CONTENIDO ******************** -->
+    <main class="page-content">
+        <div class="container">
+            <div class="cover">
+                <!-- ******************** SECCION FOTO DE PERFIL ******************** -->
+                <section class="profile">
+                    <div class="profile-bg">
+                        <div class="profile-img">
+                            <img title="Ese soy yo!!" src="img/profilePic.png" alt="Foto Perfil" id="imagen"
+                                onload="vestir()" />
+                            <!-- Otra manera de realizar el cambio de imagen sin JS, dentro de los atributos del elemento "img":
+                                <onmouseover="this.src='img/profilePicMeme.png'" onmouseout="this.src='img/profilePic.png'"> -->
+                        </div>
+                        <div class="profile-name">
+                            <h2>Fulano de Tal</h2>
+                            <h4>Freelancer - IT Student</h4>
+                        </div>
+                    </div>
+                </section>
+                <!-- ******************** FINSECCION FOTO DE PERFIL ******************** -->
+
+                <!-- ******************** SECCION DETALLES ******************** -->
+                <section class="about section">
+                    <div class="about__summary">
+                        <h2 class="title">Breve introducción</h2>
+                        <p>
+                            Soy una persona autodidacta en continua capacitación.
+                            Siempre me sentí atraido por la tecnología. Me dedico a realizar
+                            mantenimiento informático para empresas. Con el tiempo fui adquiriendo
+                            nociones basicas pero nunca terminé de adentrarme de lleno en el mundo
+                            de la programación.
+                            Es, al día de hoy, una deuda pendiente que desde hace 2 años busco
+                            saldar, al mismo tiempo que sorteo las visicitudes de ser sotén de
+                            una familia de 5, lo cual lo hace un excelente desafío tanto como
+                            aprendizaje de nuevas ciencias, como también un gran logro personal.
+                        </p>
+                        <P> ¡QUIERO SER PROGRAMADOR!</P>
+                    </div>
+                    <div class="about__info">
+                        <ul class="about__info-items">
+                            <li class="about__info-item--right">Edad</li>
+                            <li class="about__info-item">40</li>
+                            <li class="about__info-item--right">Email</li>
+                            <li class="about__info-item">esficticio@tambienaca.ar</li>
+                            <li class="about__info-item--right">Telefono</li>
+                            <li class="about__info-item">+54 9 112345-6789</li>
+                            <li class="about__info-item--right">Direccion</li>
+                            <li class="about__info-item">Buenos Aires - Argentina</li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- ******************** FIN SECCION DETALLES ******************** -->
+
+                <!-- ******************** SECCION HABILIDADES ******************** -->
+                <section class="skills section" id="skills">
+                    <div class="skills__header">
+                        <h2 class="title">Habilidades y Conocimientos</h2>
+                    </div>
+                    <ul class="skills__items">
+                        <li class="skills__item">
+                            <i class="fas fa-laptop"></i>
+                            <i class="fas fa-microchip"></i>
+                            <i class="fas fa-wrench"></i>
+                            <a><span>HARDWARE</span> (Armado y reparacion de equipos y circuitos impresos)</a>
+                        </li>
+                        <li class="skills__item">
+                            <i class="fab fa-windows"></i>
+                            <a><span>Windows</span>,</a>
+                            <i class="fab fa-ubuntu"></i>
+                            <a><span>Linux</span> (Ubuntu), </a>
+                            <i class="fab fa-android"></i>
+                            <a><span>Android</span>, (Mantenimiento y configuracion) </a>
+                        </li>
+                        <li class="skills__item">
+                            <i class="fab fa-html5"></i>
+                            <a><span>HTML</span> (Conocimientos basicos... y aprendiendo...)</a>
+                        </li>
+                        <li class="skills__item">
+                            <i class="fab fa-css3-alt"></i>
+                            <a><span>CSS</span> (Conocimientos basicos... y aprendiendo...)</a>
+                        </li>
+                        <li class="skills__item">
+                            <i class="fab fa-js-square"></i>
+                            <a><span>JavaScript</span> (Fundamentos basicos... y aprendiendo...)</a>
+                        </li>
+                        <li class="skills__item">
+                            <i class="fab fa-git-alt"></i>
+                            <a>Version control:<span>Git</span> (Aprendiendo...)</a>
+                            <i class="fab fa-github"></i>
+                            <a><span>GitHub</span> (Conociendonos...)</a>
+                        </li>
+                        <li class="skills__item">
+                            <i class="fas fa-laptop-code"></i>
+                            <a>Editors: </a>
+                            <span>Visual Studio Code</span>
+                        </li>
+                    </ul>
+                </section>
+                <!-- ******************** FIN SECCION HABILIDADES ******************** -->
+
+                <!-- ******************** SECCION PROYECTOS ******************** -->
+                <section class="projects section" id="projects">
+                    <h2 class="title">Proyectos</h2>
+                    <p> "Me encuentro frente a los primeros escalones de este hermoso mundo con lo cual no puedo
+                        aun presentar referencias ni trabajos realizados... salvo por la siguiente web en la cual
+                        tuve la oportunidad de participar y aprender muchismo al desarrollarla hace ya unos años.
+                        Hoy en dia es mi intencion realizar su actualizacion y su rediseño..."
+                    </p>
+                    <div class="projects__inner">
+                        <a href="http://www.kormat.com.ar/" target="_blank" class="projects__item">
+                            <img title="www.kormat.com.ar" src="img/kormat.png" alt="kormat.com.ar">
+                            <div class="projects__item-desc">
+                                <h4>Proyectos Kormat</h4>
+                                <p>Web de la empresa con detalle de sus productos</p>
+                                <p>HTML, CSS, JavaScript</p>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+                <!-- ******************** FIN SECCION PROYECTOS ******************** -->
+
+                <!-- ******************** SECCION EDUCACION ******************** -->
+                <section class="edu section" id="education">
+                    <div class="edu__inner">
+                        <h2 class="title">Educacion</h2>
+                    </div>
+                    <div class="edu__timeline">
+                        <div class="edu__timeline-card card-success">
+                            <div class="card-body">
+                                <div class="edu-head">
+                                    Instituto San Vida
+                                    <span class="text-small">- Instituto de eduacion primaria y secundaria -</span>
+                                </div>
+                                <div class="edu-time">1994 - 1999</div>
+                                <div>Titulo de Bachiller</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="edu__timeline">
+                        <div class="edu__timeline-card card-success">
+                            <div class="card-body">
+                                <div class="edu-head">Universidad Veo Veo - UVV -</div>
+                                <div>
+                                    Carrera: Licenciatura en Ingenieria Comercial - INCOMPLETA -
+                                </div>
+                                <div>
+                                    (35 de 42 materias).
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="edu__timeline">
+                        <div class="edu__timeline-card card-success">
+                            <div class="card-body">
+                                <div class="edu-head">
+                                    EGG
+                                    <span class="text-small">- Institucion de enseñanza online en tecnologia -</span>
+                                </div>
+                                <div>
+                                    Titulo: PDC - Programacion Desde Cero
+                                </div>
+                                <div>
+                                    Introduccion a la programacion mediante el aprendizaje de pseudocodigo.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ******************** FIN SECCION EDUCACION ******************** -->
+
+                <!-- ******************** SECCION IDIOMAS ******************** -->
+                <section class="edu section" id="languages">
+                    <div class="edu__inner">
+                        <h2 class="title">Idiomas</h2>
+                    </div>
+                    <div class="edu__timeline">
+                        <div class="edu__timeline-card card-success">
+                            <div class="card-body">
+                                <div class="edu-head">
+                                    Castellano <span class="text-small">[Idioma Nativo]</span>
+                                </div>
+                                <div class="edu-head">
+                                    Ingles <span class="text-small">[Nivel Avanzado C1]</span>
+                                </div>
+                                <div class="edu-head">
+                                    Portugues <span class="text-small">[Nivel Intermedio B1]</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ******************** FIN SECCION IDIOMAS ******************** -->
+
+
+                <!-- ******************** SECCION EXPERIENCIA ******************** -->
+                <section class="edu section" id="experience">
+                    <div class="edu__inner">
+                        <h2 class="title">Experiencia</h2>
+                    </div>
+                    <div class="edu__timeline">
+                        <div class="edu__timeline-card card-success">
+                            <div class="card-body">
+                                <div class="edu-head">Hewlett Packard</div>
+                                <div class="edu-time">2018 - Present</div>
+                                <div>Realizo tareas en conjunto con la empresa como ser cableados estructurales,
+                                    networking,
+                                    proyectos y desarrollos puntuales.
+                                    <a class="work-link" href="https://www.hp.com/"
+                                        target="_blank">HP Argentina</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="edu__timeline">
+                        <div class="edu__timeline-card card-success">
+                            <div class="card-body">
+                                <div class="edu-head">Mantenimiento informatico</div>
+                                <div class="edu-time">2018 - Present</div>
+                                <div>
+                                    Realizo mantenimiento informatico a pequeñas y medianas empresas. Mediante abono y
+                                    trabajos puntuales.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ******************** FIN SECCION EXPERIENCIA ******************** -->
+
+            </div>
+        </div>
+    </main>
+
+    <!-- ******************** FIN CONTENIDO ******************** -->
+
+    <!-- ******************** FOOTER ******************** -->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="author">
+                    &copy; Fulano de Tal - 2023
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ******************** FIN FOOTER ******************** -->
+
+    <!-- ******************** JAVASCRIPT ******************** -->
+    <script src="app.js"></script>
+    <!-- **************************************************** -->
+</body>
+
+</html>
