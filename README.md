@@ -7,4 +7,4 @@ Por problemas familiares no pude dedicarle todo el tiempo que me hubiese gustado
 
 
 
-# [https://gargolian.github.io/](https://gargolian.github.io/)
+# [https://gargolian.github.io/](CV - Integrador en GITHUB PAGES)
