@@ -7,4 +7,4 @@ Por problemas familiares no pude dedicarle todo el tiempo que me hubiese gustado
 
 
 
-# [https://github.com/Gargolian/gargolian.github.io.git](https://github.com/Gargolian/gargolian.github.io.git)
+# [https://gargolian.github.io/](https://gargolian.github.io/)
